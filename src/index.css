@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 /* navbar css */
 
 * {
@@ -10,14 +11,30 @@
   /* background-color: #f1f5fd; */
 }
 
-.navbar {}
+.navbar {
+  height: 80px;
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  font-size: 1.3rem;
+  margin-top: -25px;
+}
+
+.active {
+  height: 100px;
+  background-color: #fff;
+  transition: all ease 0.2s;
+}
 
 .navbar-toggler {
   width: 46%;
 }
 
 .navbar-bg {
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 0.1rem 0;
   z-index: 99;
   position: fixed;
@@ -75,7 +92,7 @@ header {
 }
 
 .details {
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   position: absolute;
   width: 50%;
@@ -132,51 +149,52 @@ header {
   }
 }
 
-
 /* ------------our guarentee css start--------- */
 
 .service-main-container {
   /* margin-top      : 1rem; */
-  padding         : 1rem 0;
+  padding: 1rem 0;
   background-color: #010921;
 }
 
 .heading-container {
-  color      : #fff;
-  margin     : 89px 0px 0px 0px;
+  color: #fff;
+  margin: 89px 0px 0px 0px;
   font-family: "Poppins", Sans-serif;
-  font-size  : 39px;
+  font-size: 39px;
   font-weight: 700;
-  text-align : center;
+  text-align: center;
 }
-
 
 .work-container-subdiv .sub-heading {
-  font-size    : 22px;
-  line-height  : 1.5;
+  font-size: 22px;
+  line-height: 1.5;
   margin-bottom: 10px;
-  color        : #fff;
-  padding      : 0px 14px 14px 21px;
+  color: #fff;
+  text-align: left;
+  margin: 30px 0px 30px 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
 }
-
-
 
 .service-main-container .main-heading {
   margin: 3rem 0;
 }
 
 .work-container-subdiv {
-  box-shadow : 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
   margin-left: 15px;
   background-color: #0d152d;
   color: #fff;
-  padding:20px 20px ;
-
+  /* padding: 20px 20px; */
 }
 
-.work-container-subdiv:hover {
- 
+.service-section-inside {
+  text-align: left;
+  padding: 50px 40px 60px 40px;
 }
+
+.work-container-subdiv:hover {}
 
 .fontawesome-style {
   /* color: white; */
@@ -189,62 +207,173 @@ header {
 }
 
 .work-container-subdiv .main-hero-para {
-  width      : 100%;
-  font-size  : 14px;
+  width: 100%;
+  font-size: 14px;
   font-weight: 400;
-  padding    : 0px 14px 14px 21px;
+  text-align: left;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  /* padding: 0px 14px 14px 21px; */
+}
+
+.sub-heading-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  position: relative;
+  color: #fff;
+  font-size: 36px;
+  /* padding: 10px; */
+  margin-top: 21px;
+}
+
+.sub-para-title {
+  /* margin-top: 10px; */
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 30px 0px 30px 0px;
 }
 
 .service-main-container .work-container-subdiv .fontawesome-style {
-
-  text-align     : left;
-  margin         : 2rem 1rem;
-  text-align     : center !important;
+  text-align: left;
+  margin: 2rem 1rem;
+  text-align: center !important;
   justify-content: center;
-  font-size      : 37px !important;
+  font-size: 37px !important;
+}
 
+.btn-primary {
+  color: #fff;
+  /* background-color: #0d6efd; */
+  border-color: #0d6efd!important;
+  border: 3px solid #0a3ad8!important;
+  width: 132px;
+  height: 13%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .work-container-subdiv {
+    margin-top: 60px!important;
+  }
 }
 
 @media (min-width: 1400px) {
   .service-container .col-xxl-4 {
-    flex  : 0 0 auto;
-    width : 30% !important;
+    flex: 0 0 auto;
+    width: 30% !important;
     margin: auto;
   }
 }
 
 @media (min-width: 992px) {
   .service-container .col-lg-4 {
-    flex  : 0 0 auto;
-    width : 30% !important;
+    flex: 0 0 auto;
+    width: 30% !important;
     margin: 2.5rem auto;
-
   }
-
   .work-container-subdiv {
-    box-shadow : 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
     margin-left: 15px;
-
   }
 }
 
-hr {
-  width : 40px;
+/* hr {
+  width: 40px;
   margin: auto;
+} */
+
+.icon-class {
+  width: 70px;
+  height: 70px;
 }
 
 /*--------------- our guarentee css end ---------*/
 
+/* ---------------webdevelopment css start---- */
+
+.development-section {
+  background-color: #faf3f3;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.webdevelopment-image {
+  width: 90%;
+  height: 95%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.sub-title-websec {
+  font-size: 28px;
+  color: #0d152d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 20px 0px 4px;
+}
+
+.title-websec {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  position: relative;
+  color: black;
+  font-size: 36px;
+  margin-top: 21px;
+  padding: 0px 0px 20px;
+}
+
+.web-para {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.web-span {
+  background-color: #328efd;
+}
+
+.web-line {
+  width: 20px;
+  height: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .webdevelopment-image {
+    width: 103%;
+    height: 95%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+/* ---------------webdevelopment css end------- */
+
+/* ---------------our guarentee section----------- */
+
+.guarentee-section {
+  background-color: #f7fafa;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.gaurentee-list li {
+  list-style: none;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 0px;
+}
+.gaurentee-list li:hover {
+  color: #0d6efd;
+  list-style: none;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 0px;
+}
 
 
 
-
-
-
-
-
-
-
+/*-------------- our guarenteee section -end------------- */
 
 @media (min-width:600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
