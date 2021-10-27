@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../images/banner.jpg"
+import image from "../images/men.png"
 import line from "../images/vertical-line.png"
 
 function OurGuarentee() {
@@ -11,12 +11,12 @@ function OurGuarentee() {
                     <div className="row">
 
                         <div className="col-11 col-lg-6 col-xxl-6">
-                            <h2 className="sub-title-websec"><span className="web-span">OUR GUARENTEE'S</span> FOR YOUR SATISFICATION</h2>
-                            <h2 className=" title-websec">A Web Design Agency That Makes Change Happen.</h2>
-                            <p className="web-para">Perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequ untur magni dolores eos qui ratione voluptatem the breakpoint for tablet devices.</p>
+                            <h2 className="sub-title-websec" ><span className="web-span" style={{backgroundColor:"#854afc"}}>ECOMMERCE SOLUTIONS</span> FOR YOUR</h2>
+                            <h2 className=" title-websec" style={{color:"#854afc"}}>A Web Design Agency That Makes Change Happen.</h2>
+                            <p className="web-para" style={{color:"#854afc",}}>Our customized software development can work as influential equipment for your business. We appreciate your market needs and create appropriate applications for your company</p>
                             <div className="row">
                                 <div className="col-1 col-lg-1 col-md-1">
-                                    <img className="web-line" src={line} />
+                                    <img className="grant-line" src={line} />
                                 </div>
                                 <div className="col-11 col-lg-11 col-md-11">
                                     <ul className="gaurentee-list">

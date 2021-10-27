@@ -1,41 +1,47 @@
 import icon from "../images/icon.png"
+import image1 from "../images/laptop-screen.png"
+import image2 from "../images/shop.png"
+import image3 from "../images/smartphone.png"
+import image4 from "../images/social-media.png"
+import image5 from "../images/graphic-design.png"
+import image6 from "../images/dashboard.png"
 
 const serviceapi = [
   {
     id: 1,
-    logo: {icon},
-    title: "Money Back Guarantee",
-    info: "100% Money Back Guarantee.",
+    logo: <img className="service-img" src={image1} />,
+    title: "Web Designing Solutions",
+    // info: "100% Money Back Guarantee.",
   },
   {
     id: 2,
-    logo: "fa fa-edit",
-    title: "Non-Plagiarism Guarantee ",
-    info: "100% Plagiarism Free work",
+    logo: <img className="service-img" src={image4} />,
+    title: "Digital Marketing Solution ",
+    // info: "100% Plagiarism Free work",
   },
   {
     id: 3,
-    logo: "fa fa-history",
-    title: "Free Unlimited Amendments.",
-    info: "Free Unlimited Amendments for You",
+    logo: <img className="service-img" src={image2} />,
+    title: "Ecommerce Software solutions",
+    // info: "Free Unlimited Amendments for You",
   },
   {
     id: 4,
-    logo: "fa fa-dollar",
-    title: "Best Price Guarantee",
-    info: "Best Pricing Ever.",
+    logo: <img className="service-img" src={image6} />,
+    title: "CMS Software solutions",
+    // info: "Best Pricing Ever.",
   },
   {
     id: 5,
-    logo: "fa fa-history",
-    title: "24/7 Customer Services.",
-    info: "We Provide 24/7 Customer Services.",
+    logo: <img className="service-img" src={image5} />,
+    title: "Graphics Designing solutions",
+    // info: "We Provide 24/7 Customer Services.",
   },
   {
     id: 6,
-    logo: "fa fa-comment",
-    title: "Online Chat Support",
-    info: "We provide Online chat support ",
+    logo: <img className="service-img" src={image3} />,
+    title: "Mobile App Solutions ",
+    // info: "We provide Online chat support ",
   },
 ];
 
