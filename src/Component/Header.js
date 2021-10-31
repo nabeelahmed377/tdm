@@ -1,5 +1,5 @@
 import React from 'react'
-import video from "../images/header.mp4"
+// import video from "../images/header.mp4"
 
 function Header() {
     return (
@@ -22,9 +22,9 @@ function Header() {
                             </div>
                         </div>
                     </div> */}
-                    <video autoPlay loop muted>
+                    {/* <video autoPlay loop muted>
                         <source className="header-video" src={video} style={{width:"100%"}} type='video/mp4' />
-                    </video>
+                    </video> */}
                 </div>
             </header>
         </>

@@ -1,48 +1,65 @@
 import icon from "../images/icon.png"
-import image1 from "../images/laptop-screen.png"
-import image2 from "../images/shop.png"
-import image3 from "../images/smartphone.png"
-import image4 from "../images/social-media.png"
-import image5 from "../images/graphic-design.png"
-import image6 from "../images/dashboard.png"
+import graphicsicon from "../images/graphics.png"
+import brandingicon from "../images/brandingicon.png"
+import webicon from "../images/webicon.png"
+import animation from "../images/animation.png"
+import mobile from "../images/mobile-app.png"
+import shopping from "../images/online-shopping.png"
+import logo from "../images/logo-design.png"
+import cms from "../images/digital.png"
+import video from "../images/video-editing.png"
+
 
 const serviceapi = [
   {
     id: 1,
-    logo: <img className="service-img" src={image1} />,
-    title: "Web Designing Solutions",
-    // info: "100% Money Back Guarantee.",
+    icon: <img className="icon-class" src={webicon} />,
+    title: "Web Designing ",
+    
   },
   {
     id: 2,
-    logo: <img className="service-img" src={image4} />,
-    title: "Digital Marketing Solution ",
-    // info: "100% Plagiarism Free work",
+    icon: <img className="icon-class" src={graphicsicon} />,
+    title: "Graphics Designing",
+  
   },
   {
     id: 3,
-    logo: <img className="service-img" src={image2} />,
-    title: "Ecommerce Software solutions",
-    // info: "Free Unlimited Amendments for You",
+    icon: <img className="icon-class" src={logo} />,
+    title: "Logo Designing ",
+   
   },
   {
     id: 4,
-    logo: <img className="service-img" src={image6} />,
-    title: "CMS Software solutions",
-    // info: "Best Pricing Ever.",
+    icon: <img className="icon-class" src={shopping} />,
+    title: "Ecommerce Application",
+
   },
   {
     id: 5,
-    logo: <img className="service-img" src={image5} />,
-    title: "Graphics Designing solutions",
-    // info: "We Provide 24/7 Customer Services.",
+    icon: <img className="icon-class" src={animation} />,
+    title: "2D/3D Animation",
+ 
   },
   {
     id: 6,
-    logo: <img className="service-img" src={image3} />,
-    title: "Mobile App Solutions ",
-    // info: "We provide Online chat support ",
+    icon: <img className="icon-class" src={mobile} />,
+    title: "Mobile Applications",
+    
   },
+  {
+    id: 7,
+    icon: <img className="icon-class" src={cms} />,
+    title: "CMS Software ",
+  
+  },
+  {
+    id: 8,
+    icon: <img className="icon-class" src={video} />,
+    title: "Video Editing",
+    
+  },
+  
 ];
 
 export default serviceapi;

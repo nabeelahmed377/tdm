@@ -1,14 +1,65 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Component/PriceChart.css"
+import api from '../Apis/PriceAPI'
+import Button from '@material-ui/core/Button';
+
 
 function PriceChart() {
+    const [priceapi, setpriceapi] = useState(api)
+
+    const filterItem = (categoryItem) => {
+        const updatedItem = api.filter((curElem) => {
+            return curElem.category === categoryItem
+        })
+        setpriceapi(updatedItem)
+    }
+
     return (
         <>
             <div class="demo9">
-                <div class="container-fluid">
-                    <h4 className="price-title-1">PRICE<span className="price-title"> PACKAGES</span></h4>
+                <div class="container">
+                    <div>
+                        <h4 className="price-title-1">PRICE<span className="price-title"> PACKAGES</span><hr class="section-dash-yellow mx-auto" ></hr></h4>
+                    </div>
+
+
+                    <div className=" container btn-container text-center ">
+                        <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("webdesigning")} >webdesigning</Button>
+                        <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("Branding")}>Branding</Button>
+                        <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("graphicsDesigning")}>graphicsDesigning</Button>
+                        <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("ui/uxDesigning")}>ui/uxDesigning</Button>
+                        <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("logoDesigning")}>logoDesigning</Button>
+                        <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("3D/2Danimation")}>Animation</Button>
+                        <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("GFX")}>GFX</Button>
+                    </div>
+                    {/* <hr class="section-dash mx-auto" ></hr> */}
+
+
+
+
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+
+                        {
+                            priceapi.map((CurentElem) => {
+                                return <div class="col-md-3 col-sm-6">
+                                    <div class="pricingTable9" >
+                                        <div class="pricingTable-header">
+                                            <span class="price-value">{CurentElem.image}<span class="currency"></span></span>
+                                            <h3 class="title">{CurentElem.title}</h3>
+                                        </div>
+                                        <ul class="pricing-content">
+                                            <li>{CurentElem.space}</li>
+                                            <li>{CurentElem.accounts}</li>
+                                            <li>{CurentElem.bandwidth}</li>
+                                            <li>{CurentElem.sub_domain}</li>
+                                            <li>{CurentElem.domain}</li>
+                                        </ul>
+                                        <a href="#" style={{ textDecoration: "none" }} class="pricingTable-signup">Read More</a>
+                                    </div>
+                                </div>
+                            })
+                        }
+                        {/* <div class="col-md-3 col-sm-6">
                             <div class="pricingTable9">
                                 <div class="pricingTable-header">
                                     <span class="price-value">10<span class="currency">$</span></span>
@@ -55,8 +106,8 @@ function PriceChart() {
                                 </ul>
                                 <a href="#" class="pricingTable-signup">Sign Up</a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
+                        </div> */}
+                        {/* <div class="col-md-3 col-sm-6">
                             <div class="pricingTable9 purple">
                                 <div class="pricingTable-header">
                                     <span class="price-value">40<span class="currency">$</span></span>
@@ -71,7 +122,7 @@ function PriceChart() {
                                 </ul>
                                 <a href="#" class="pricingTable-signup">Sign Up</a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

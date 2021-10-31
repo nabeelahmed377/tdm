@@ -1,13 +1,17 @@
+* {
+    font-family: "Poppins", Sans-serif;
+}
+
 .demo9 {
-    background: "";
+    background: #F5F5F5;
     padding   : 10px 0
-    
 }
 
 .pricingTable9 {
-    background    : #fff;
+    background    : white;
     padding-bottom: 20px;
-    overflow      : hidden
+    overflow      : hidden;
+    box-shadow    : rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .pricingTable9 .pricingTable-header {
@@ -20,7 +24,7 @@
     content   : "";
     width     : 100%;
     height    : 150%;
-    background: #606aa3;
+    background: #febd0e;
     position  : absolute;
     top       : -90%;
     left      : -20%;
@@ -32,7 +36,7 @@
     content   : "";
     width     : 100%;
     height    : 190%;
-    background: #727cb6;
+    background: #febd0e;
     position  : absolute;
     top       : -76%;
     right     : -16%;
@@ -93,11 +97,11 @@
     width         : 80%;
     padding       : 10px 0;
     text-align    : center;
-    border        : 1px solid #606aa3;
+    border        : 1px solid #febd0e;
     border-radius : 40px;
     margin        : 0 auto;
     font-size     : 18px;
-    color         : #606aa3;
+    color         : #febd0e;
     z-index       : 1;
     text-transform: uppercase;
     overflow      : hidden;
@@ -115,13 +119,13 @@
 }
 
 .pricingTable9 .pricingTable-signup:before {
-    border-color: transparent transparent transparent #606aa3;
+    border-color: transparent transparent transparent #febd0e;
     bottom      : 0;
     left        : 0
 }
 
 .pricingTable9 .pricingTable-signup:after {
-    border-color: transparent #606aa3 transparent transparent;
+    border-color: transparent #febd0e transparent transparent;
     top         : 0;
     right       : 0
 }
@@ -241,11 +245,39 @@
 }
 
 .price-title-1 {
-    width         : 100%;
-    text-align    : center;
-    color         : #febd0e;
-    font-size     : 30px;
-    font-family   : 'Montserrat', sans-serif;
+    width            : 100%;
+    text-align       : center;
+    color            : #febd0e;
+    font-size        : 30px;
+    font-family      : 'Montserrat', sans-serif;
     /* font-weight   : bolder; */
-    padding-bottom: 30px;
+    padding-bottom   : 30px;
+}
+
+.section-dash-yellow {
+    border    : 0 none;
+    border-top: 5px dotted #febd0e;
+    background: none;
+    height    : 0;
+    width     : 25px;
+
+}
+
+hr {
+    margin-top   : 20px;
+    margin-bottom: 20px;
+    border       : 0;
+    border-top   : 1px solid #eee;
+    opacity      : 100 !important;
+}
+
+.price-icon {
+    width: 53px;
+}
+
+.btn-container {
+    margin-bottom: 10px;
+}
+.MuiButton-root{
+margin: 6px!important;
 }
