@@ -2,6 +2,10 @@ import React from 'react'
 import Slider from "react-slick";
 import node from "../images/node.png"
 import down from "../images/download.png"
+// import d1 from "../images/d1.png"
+import d2 from "../images/d2.png"
+import d3 from "../images/d3.png"
+import d4 from "../images/d4.png"
 
 function TechnoSlider() {
     var settings = {
@@ -43,34 +47,35 @@ function TechnoSlider() {
         <>
             <section className="techno-slider">
                 <div className="container">
-                    <h4 className="sub_title" style={{textAlign:"center"}}>OUR TECHNALOGIES</h4>
-                    <h4 className="sec_title" style={{textAlign:"center",marginBottom:"90px"}}>WE TRUST WITH THEM</h4>
-                  
+                    <h2 className="sub-title-websec" style={{ fontFamily: 'Oswald ,sans-serif', textAlign: "center", fontSize: "18px", marginTop: "50px" }} >OUR PORTFOLIO</h2>
+                    < h2 className=" title-websec" style={{ color: "#ffc000", fontFamily: 'Oswald ,sans-serif', textAlign: "center", fontSize: "45px", marginBottom: "30px" }}><span style={{ fontFamily: 'Oswald ,sans-serif', fontWeight: "300" }}> LATEST</span> WORKS</h2>
+                    <hr class="section-dash-yellow d-flex justify-content-center mx-auto" style={{ marginTop: "-20px" }}></hr>
+
 
                     <Slider {...settings}>
                         <div>
-                            <img className="techno-img"  src={down} />
+                            <img className="techno-img" src={down} />
                         </div>
                         <div>
-                            <img className="techno-img"  src={down} />
+                            <img className="techno-img" src={d2} />
                         </div>
                         <div>
-                            <img className="techno-img"  src={down} />
+                            <img className="techno-img" src={d2} />
                         </div>
                         <div>
-                            <img className="techno-img"  src={down} />
+                            <img className="techno-img" src={d3} />
                         </div>
                         <div>
-                            <img className="techno-img"  src={down} />
+                            <img className="techno-img" src={d4} />
                         </div>
                         <div>
-                            <img className="techno-img"  src={down} />
+                            <img className="techno-img" src={down} />
                         </div>
                         <div>
-                            <img className="techno-img"  src={down} />
+                            <img className="techno-img" src={down} />
                         </div>
                         <div>
-                            <img className="techno-img"  src={down} />
+                            <img className="techno-img" src={down} />
                         </div>
                     </Slider>
                 </div>

@@ -6,15 +6,22 @@ function Subscribe() {
             <section className="subscribe-sec">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-5 col-md-5">
-                            <p className="sub_title">DON’T MISS OUT OUR LATEST UPDATES</p>
-                            <h1 className="sec_title">SUBSCRIBE US</h1>
-                        </div>
-                        <div className="col-lg-7 col-md-7">
-                            <input className="subscribefrom" type="email" placeholder="Enter Your Email" name="email"></input>
-                            <button className="common_btn red_bg">SUBSCRIBE NOW</button>
+                        <div className="col-lg-12 col-md-12">
+                            <h1 className="sec_title">GREAT THINGS IN BUSINESS ARE NEVER DONE BY ONE PERSON.THEY’RE DONE BY A TEAM OF PEOPLE. </h1><br />
+                            <div className="d-flex justify-content-center">
+                                <button className="common_btn " style={{ textAlign: "center", justifyContent: "center", color: "#fff", border: "3px solid white" }}>READ MORE</button>
+                            </div>
                         </div>
                     </div>
+
+                    {/* <div className="row">
+                        <div className="col-lg-9 col-md-9">
+                            <h1 className="sec_title">LET'S GET YOUR PROJECT STARTED!</h1>
+                        </div>
+                        <div className="col-lg-3 col-md-3">
+                            <button className="common_btn red_bg">CONTACT US</button>
+                        </div>
+                    </div> */}
                 </div>
 
 

@@ -35,7 +35,7 @@ function Navbar() {
                         <div class={`collapse navbar-collapse ${show ? "show" : ""}`}>
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item ">
-                                    <NavLink class="nav-link" to="/">Home </NavLink>
+                                    <NavLink class="nav-link" className="Home-css" style={{textTransform:"uppercase",}} to="/">Home </NavLink>
                                 </li>
                                 <li class="nav-item ">
                                     <NavLink class="nav-link" to="/aboutus">About Us</NavLink>

@@ -3,13 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@100;300;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@100;300;500&family=Sedgwick+Ave+Display&display=swap');
 /* navbar css */
 
 * {
-  margin                : 0px;
-  padding               : 0px;
-  box-sizing            : border-box;
+  margin    : 0px;
+  padding   : 0px;
+  box-sizing: border-box;
+
   /* font-family        : "Poppins", sans-serif; */
   /* background-color   : #f1f5fd; */
 }
@@ -64,11 +65,13 @@
 }
 
 .navbar li a {
-  color             : #fff !important;
+  color             : #ffc000 !important;
   text-decoration   : none;
   /* font-family    : 'Montserrat', sans-serif; */
   font-family       : 'Oswald', sans-serif;
+  /* font-family    : 'Sedgwick Ave Display', cursive; */
   font-weight       : 600;
+  text-transform    : capitalize;
 }
 
 
@@ -103,6 +106,7 @@
   width : 100%;
   float : left;
   top   : 0;
+
 }
 
 video {
@@ -177,11 +181,19 @@ video {
 .service-main-container {
   /* margin-top      : 1rem; */
   /* padding         : 1rem 0; */
-  /* background-color: #010921; */
-  background-image: url("./images/ser-bg.jpg");
+
+  /* height                  : 100vh; */
+  /* background-color        : #f0b400; */
+  /* background-color           : black; */
+  background-image        : url("./images/middle-banner.jpg");
+  background-repeat       : no-repeat;
+  background-blend-mode   : color;
+  background-attachment   : fixed;
+  /* background-color     : rgba(0, 0, 0, 0.158); */
+
 }
 
-@media (min-width: 992px) {
+@media (min-width : 992px) {
   .col-lg-3 {
     flex : 0 0 auto;
     width: 23% !important;
@@ -213,14 +225,14 @@ video {
 }
 
 .work-container-subdiv {
-  box-shadow         : 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
-  margin-left        : 15px;
-  /* background-color: #0d152d; */
-  border             : solid 1px grey;
-  border-radius      : 10px;
-  color              : #fff;
-  /* padding         : 20px 20px; */
-  margin-bottom      : 13px;
+  box-shadow                    : 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
+  margin-left                   : 15px;
+  /* background-color           : #0d152d; */
+  /* border                     : solid 1px grey; */
+  /* border-radius              : 10px; */
+  color                         : #fff;
+  /* padding                    : 20px 20px; */
+  margin-bottom                 : 13px;
 }
 
 .work-container-subdiv:hover {
@@ -273,11 +285,15 @@ video {
 }
 
 .flip-card-front {
-  /* background-color: #bbb; */
-  border          : solid 1px grey;
-  color           : white;
-  padding         : 60px 10px;
-  background-color: transparent
+  /* background: #ed1c24; */
+
+  border                : solid 3px #ffc000(148, 0, 0);
+  color                 : #fff;
+  padding               : 60px 10px;
+  /* background-color   : transparent; */
+  /* background-color   : #ffc000; */
+  background            : linear-gradient(21deg, rgba(245, 127, 45, 1) 14%, rgba(255, 192, 0, 1) 58%);
+
 }
 
 .flip-card-front h4 {
@@ -286,12 +302,14 @@ video {
 }
 
 .flip-card-back {
-  background-color: #e62b4a;
+  background-color: #181818;
   color           : white;
+  border          : 2px solid #181818;
   padding         : 30px 10px;
   transform       : rotateY(180deg);
   padding         : 60px 10px;
 }
+
 
 
 
@@ -419,11 +437,13 @@ video {
 }
 
 .sub-title-websec {
-  font-size  : 28px;
-  color      : #0d152d;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color    : #0d152d;
+
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Sedgwick Ave Display', cursive;
   font-weight: 500;
-  padding    : 20px 0px 4px;
+  padding    : 0px 0px 0px;
 }
 
 .title-websec {
@@ -432,8 +452,8 @@ video {
   position   : relative;
   color      : #fff;
   font-size  : 36px;
-  margin-top : 21px;
-  padding    : 0px 0px 20px;
+  margin-top : 0px;
+  padding    : 0px 0px 0px;
 }
 
 .web-para {
@@ -442,7 +462,7 @@ video {
 }
 
 .web-span {
-  background-color: #fee33e;
+  /* background-color: #fee33e; */
 }
 
 .web-line {
@@ -480,9 +500,21 @@ video {
 /* ---------------our guarentee section----------- */
 
 .guarentee-section {
-  /* background-color: #f7fafa; */
-  padding-top   : 90px;
-  padding-bottom: 0px;
+  background-color: #f7fafa;
+  padding-top          : 90px;
+  padding-bottom       : 100px;
+  /* background-image  : url("./images/headerimage.jpg"); */
+  background-repeat    : no-repeat;
+  background-position  : center;
+  /* background-blend-mode: color; */
+  /* background-color  : linear-gradient(21deg, rgba(245, 127, 45, 1) 14%, rgba(255, 192, 0, 1) 58%); */
+  /* background-blend-mode: overlay;
+  background-image     :
+    url('./images/headerimage.jpg'),
+    linear-gradient(21deg, rgba(245, 128, 45, 0.521) 14%, rgba(255, 191, 0, 0.61) 58%);
+  background-size: cover;
+  background-attachment: fixed; */
+ 
 }
 
 .gaurentee-list {
@@ -580,20 +612,29 @@ video {
 /* ----------------portfolio section css end */
 
 .subscribe-sec {
-  background: #f0f0f0;
-  margin    : 20px 0px;
+  /* background         : #f0f0f0; */
+  background-image     : url('./images/sub-sec.jpg');
+  margin               : 0px 0px;
+  background-repeat    : no-repeat;
+  background-position  : center;
+  width                : 100%;
+  padding              : 113px 0px;
+  background-attachment: fixed;
+
 }
 
 
 .sec_title {
   font-size     : 50px;
   line-height   : 60px;
-  color         : #000;
+  color         : #ffc000;
   letter-spacing: 2px;
   margin        : 0 0 25px;
   white-space   : pre-line;
   font-family   : 'Oswald', sans-serif;
   font-weight   : 400px;
+  text-align    : center;
+  padding       : 0px 80px;
 }
 
 .sub_title {
@@ -621,15 +662,18 @@ video {
 }
 
 .common_btn {
-  border        : none;
-  font-size     : 16px;
-  font-weight   : 400;
-  background    : #000;
-  color         : #fff;
-  height        : 70px;
-  text-transform: uppercase;
-  text-align    : center;
-  padding       : 28px 40.5px;
+  border           : none;
+  font-size        : 19px;
+  font-weight      : 400;
+  /* background    : #000; */
+  border           : 3px solid #ffc000;
+  color            : black;
+  background       : transparent;
+  height           : 70px;
+  text-transform   : uppercase;
+  text-align       : center;
+  padding          : 23px 40.5px;
+
   display       : inline-block;
   line-height   : .8;
   letter-spacing: 1.6px;
@@ -641,12 +685,14 @@ video {
 }
 
 .common_btn:hover {
-  border        : none;
-  font-size     : 16px;
-  font-weight   : 400;
-  background    : #e62b4a;
-  color         : #fff;
-  height        : 70px;
+  border          : none;
+  font-size       : 16px;
+  font-weight     : 500;
+  background-color: #ffc000;
+  color           : rgb(255, 255, 255);
+  height          : 70px;
+  transition      : background-color 0.5s ease-in-out;
+
   text-transform: uppercase;
   text-align    : center;
   padding       : 28px 40.5px;
@@ -660,10 +706,13 @@ video {
 }
 
 .techno-slider {
-  background-color: #f0f0f0;
+  /* background-color: rgb(197, 75, 75); */
+  /* background            : linear-gradient(21deg, rgba(245, 127, 45, 1) 14%, rgba(255, 192, 0, 1) 58%); */
+  background: ""
 }
-.techno-img{
-  width: 70%;
+
+.techno-img {
+  width : auto;
   height: 100px;
 }
 

@@ -17,16 +17,16 @@ function Home() {
     return (
         <>
             <Carasole />
-            <Header />
+            {/* <Header /> */}
+            <OurGuarentee />
             <Services />
             {/* <Services2 /> */}
-            <OurGuarentee />
-            <Subscribe/>
             {/* <WebDevelopment /> */}
             {/* <ImageSec /> */}
             {/* <PriceChart /> */}
             <Portfolio />
             <TechnoSlider/>
+            <Subscribe/>
             <Contact />
             <Footer />
         </>

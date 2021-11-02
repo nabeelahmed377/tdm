@@ -1,97 +1,123 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Portfolio.css"
-import image1 from "../images/portfolio-1.jpg"
-import image2 from "../images/portfolio-2.jpg"
-import image3 from "../images/portfolio-3.jpg"
-import image4 from "../images/portfolio-4.jpg"
+import Button from '@material-ui/core/Button';
+import image1 from "../images/port-img/1.jpg";
+import image2 from "../images/port-img/2.jpg";
+import image3 from "../images/port-img/3.jpg";
+import image4 from "../images/port-img/4.jpg";
+import image5 from "../images/port-img/5.jpg";
+import image6 from "../images/port-img/6.jpg";
+// import api from "./PortfolioApi.js
+import portfolioapi from '../Apis/PortfolioAPI'
 
 function Portfolio() {
+
+
+
+    const filterItem = () => {
+
+    }
+
+    // const filterItem = (categoryItem) => {
+    //     const updatedItem = api.filter((curElem) => {
+    //         return curElem.category === categoryItem
+    //     })
+    //     setpriceapi(updatedItem)
+    // }
+
+
     return (
         <>
 
-            <div class=" container projects-container scrollimation in">
+            <div class=" container-fluid  projects-container scrollimation in">
+                <h2 className="sub-title-websec" style={{ fontFamily: 'Oswald ,sans-serif', textAlign: "center", fontSize: "18px", marginTop: "50px" }} >OUR PORTFOLIO</h2>
+                < h2 className=" title-websec" style={{ color: "#ffc000", fontFamily: 'Oswald ,sans-serif', textAlign: "center", fontSize: "45px", marginBottom: "30px" }}><span style={{ fontFamily: 'Oswald ,sans-serif', fontWeight: "300" }}> LATEST</span> WORKS</h2>
+                <hr class="section-dash-yellow d-flex justify-content-center mx-auto" style={{marginTop:"-20px"}}></hr>
 
-                <h2 className="sub-title-websec" style={{ fontFamily: 'Oswald ,sans-serif', textAlign: "center", fontSize: "18px", }} ><span className="web-span" style={{
-                    backgroundColor: "#e62b4a", color: "white", fontFamily: 'Oswald ,sans-serif',
-                }}>OUR</span>PORTFOLIO</h2>
-                < h2 className=" title-websec" style={{ color: "black", fontFamily: 'Oswald ,sans-serif', textAlign: "center", fontSize: "58px" }}>WORK SHOWCASE</h2>
-                {/* <p className="web-para" style={{ color: "black", textAlign: "center" }}>We are committed to providing our customers with exceptional service while
-                    offering our employees the best training.</p> */}
+                <div className=" container btn-container text-center ">
+                <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("webdesigning")} >webdesigning</Button>
+                <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("Branding")}>Branding</Button>
+                <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("graphicsDesigning")}>graphicsDesigning</Button>
+                <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("ui/uxDesigning")}>ui/uxDesigning</Button>
+                <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("logoDesigning")}>logoDesigning</Button>
+                <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("3D/2Danimation")}>Animation</Button>
+                <Button variant="contained" style={{ color: "white", backgroundColor: "#febd0e" }} onClick={() => filterItem("GFX")}>GFX</Button>
+                </div>
 
 
 
-                <div class="row">
-                    <article class="col-md-4 col-sm-6 portfolio-item web-design apps psd">
-                        <div class="portfolio-thumb in">
-                            <a href="#" class="main-link">
-                                <img class="img-responsive img-center" src={image1} alt="" />
-                                <h2 class="project-title">WebDevelopment</h2>
-                                <span class="overlay-mask"></span>
-                            </a>
-                            {/* <a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
+                <div class ="row">
+                <article class ="col-md-4 col-sm-6 portfolio-item web-design apps psd">
+                <div class ="portfolio-thumb in">
+                <a href="#" class ="main-link">
+                <img class ="img-responsive img-center" src={image1} alt="" />
+                <h2 class ="project-title">WebDevelopment</h2>
+                <span class ="overlay-mask"></span>
+                </a>
+            {/* <a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
                             <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a> */}
-                        </div>
-                    </article>
+                </div>
+                </article>
 
-                    <article class="col-md-4 col-sm-6 portfolio-item apps">
-                        <div class="portfolio-thumb in">
-                            <a href="#" class="main-link">
-                                <img class="img-responsive img-center" src={image2} alt="" />
-                                <h2 class="project-title">Logo Designing</h2>
-                                <span class="overlay-mask"></span>
-                            </a>
-                            {/* <a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
+                <article class ="col-md-4 col-sm-6 portfolio-item apps">
+                <div class ="portfolio-thumb in">
+                <a href="#" class ="main-link">
+                <img class ="img-responsive img-center" src={image2} alt="" />
+                <h2 class ="project-title">Logo Designing</h2>
+                <span class ="overlay-mask"></span>
+                </a>
+            {/* <a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
                             <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a> */}
-                        </div>
-                    </article>
+                </div>
+                </article>
 
-                    <article class="col-md-4 col-sm-6 portfolio-item web-design psd">
-                        <div class="portfolio-thumb in">
-                            <a href="#" class="main-link">
-                                <img class="img-responsive img-center" src={image3} alt="" />
-                                <h2 class="project-title">Graphics Designing</h2>
-                                <span class="overlay-mask"></span>
-                            </a>
-                            {/* <a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
+                <article class ="col-md-4 col-sm-6 portfolio-item web-design psd">
+                <div class ="portfolio-thumb in">
+                <a href="#" class ="main-link">
+                <img class ="img-responsive img-center" src={image3} alt="" />
+                <h2 class ="project-title">Graphics Designing</h2>
+                <span class ="overlay-mask"></span>
+                </a>
+            {/* <a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
                             <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a> */}
-                        </div>
-                    </article>
+                </div>
+                </article>
 
-                    <article class="col-md-4 col-sm-6 portfolio-item apps">
-                        <div class="portfolio-thumb in">
-                            <a href="#" class="main-link">
-                                <img class="img-responsive img-center" src={image4} alt="" />
-                                <h2 class="project-title">Mobile Application</h2>
-                                <span class="overlay-mask"></span>
-                            </a>
-                            {/* <a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
+                <article class ="col-md-4 col-sm-6 portfolio-item apps">
+                <div class ="portfolio-thumb in">
+                <a href="#" class ="main-link">
+                <img class ="img-responsive img-center" src={image4} alt="" />
+                <h2 class ="project-title">Mobile Application</h2>
+                <span class ="overlay-mask"></span>
+                </a>
+            {/* <a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
                             <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a> */}
-                        </div>
-                    </article>
+                </div>
+                </article>
 
-                    <article class="col-md-4 col-sm-6 portfolio-item web-design psd">
-                        <div class="portfolio-thumb in">
-                            <a href="#" class="main-link">
-                                <img class="img-responsive img-center" src={image1} alt="" />
-                                <h2 class="project-title">2D/3D Animation</h2>
-                                <span class="overlay-mask"></span>
-                            </a>
-                            {/* <a class="enlarge cboxElement" href="#" title="Scavenger Hunt"><i class="fa fa-expand fa-fw"></i></a>
+                <article class ="col-md-4 col-sm-6 portfolio-item web-design psd">
+                <div class ="portfolio-thumb in">
+                <a href="#" class ="main-link">
+                <img class ="img-responsive img-center" src={image5} alt="" />
+                <h2 class ="project-title">2D/3D Animation</h2>
+                <span class ="overlay-mask"></span>
+                </a>
+            {/* <a class="enlarge cboxElement" href="#" title="Scavenger Hunt"><i class="fa fa-expand fa-fw"></i></a>
                             <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a> */}
-                        </div>
-                    </article>
+                </div>
+                </article>
 
-                    <article class="col-md-4 col-sm-6 portfolio-item web-design apps">
-                        <div class="portfolio-thumb in">
-                            <a href="#" class="main-link">
-                                <img class="img-responsive img-center" src={image1} alt="" />
-                                <h2 class="project-title">Video Editing</h2>
-                                <span class="overlay-mask"></span>
-                            </a>
-                            {/* <a class="enlarge cboxElement" href="#" title="Sonor"><i class="fa fa-expand fa-fw"></i></a>
+                <article class ="col-md-4 col-sm-6 portfolio-item web-design apps">
+                <div class ="portfolio-thumb in">
+                <a href="#" class ="main-link">
+                <img class ="img-responsive img-center" src={image6} alt="" />
+                <h2 class ="project-title">Video Editing</h2>
+                <span class ="overlay-mask"></span>
+                </a>
+            {/* <a class="enlarge cboxElement" href="#" title="Sonor"><i class="fa fa-expand fa-fw"></i></a>
                             <a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a> */}
-                        </div>
-                    </article>
+                </div>
+                </article>
                 </div>
             </div>
 

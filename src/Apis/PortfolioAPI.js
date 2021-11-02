@@ -1,39 +1,39 @@
+import image1 from "../images/port-img/1.jpg";
+import image2 from "../images/port-img/2.jpg";
+import image3 from "../images/port-img/3.jpg";
+import image4 from "../images/port-img/4.jpg";
+import image5 from "../images/port-img/5.jpg";
+import image6 from "../images/port-img/6.jpg";
+import video from "../images/video-editing.png"
+import post from "../images/ser-post.jpg"
+
+
 const portfolioapi = [
     {
         id: 1,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOhCPouWrJFEAZHvZCD71sofsihbHamfKyUY5OAABkeLjQhl0VkyFXFTKVoaldnHoNDZU&usqp=CAU",
-        title: "logo",
-        subtitle: "Design",
+        image: <img className="icon-class" src={image1} />,
+        title: "Web Designing ",
+
     },
     {
         id: 2,
-        image: "https://appinventiv.com/wp-content/uploads/sites/1/2019/02/How-Important-is-UI-UX-Design-in-an-App-Development-Process.png",
-        title: "Social Media",
-        subtitle: "Branding"
+
     },
     {
         id: 3,
-        image: "https://cdn.dribbble.com/users/1615584/screenshots/14132700/media/b51314060013c69de0e7563e73d38e10.jpg?compress=1&resize=400x300",
-        title: "UI/UX ",
-        subtitle: "Designing",
+
     },
     {
         id: 4,
-        image: "https://cutewallpaper.org/21/web-designer-wallpapers/wallpaper-design-website-wallpaper-websites-for-mobile-.jpg",
-        title: "Web",
-        subtitle: "Development",
+
     },
     {
         id: 5,
-        image: "https://cutewallpaper.org/21/web-designer-wallpapers/wallpaper-design-website-wallpaper-websites-for-mobile-.jpg",
-        title: "Motion",
-        subtitle: "Graphics",
+
     },
     {
         id: 6,
-        image: "https://cutewallpaper.org/21/web-designer-wallpapers/wallpaper-design-website-wallpaper-websites-for-mobile-.jpg",
-        title: "3D",
-        subtitle: "Designing",
+
     },
 
 

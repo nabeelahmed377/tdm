@@ -5,7 +5,7 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-.categories ul {
+/* .categories ul {
     list-style   : none;
     padding      : 0;
     margin       : 0;
@@ -48,7 +48,7 @@ body {
 .categories ul li.active a {
     color     : #fff;
     background: #5cc9df;
-}
+} */
 
 .projects-container .row {
     -webkit-transition: height .5s ease-out;
@@ -56,42 +56,44 @@ body {
 }
 
 .portfolio-item {
-    position          : relative;
-    margin-bottom     : 30px;
-    -webkit-transform : scale(1);
-    transform         : scale(1);
-    opacity           : 1;
-    -webkit-transition: all .4s ease-out;
-    transition        : all .4s ease-out;
+    position             : relative;
+    /* margin-bottom     : 30px; */
+    -webkit-transform    : scale(1);
+    transform            : scale(1);
+    opacity              : 1;
+    -webkit-transition   : all .4s ease-out;
+    transition           : all .4s ease-out;
+    padding              : 0px !important;
 }
 
-.portfolio-item.filtered {
+/* .portfolio-item.filtered {
     -webkit-transform: scale(0.5);
     transform        : scale(0.5);
     opacity          : 0.2;
     cursor           : default;
-}
-
+} */
+/* 
 .no-opacity .portfolio-item.filtered {
     display: none;
-}
-
+} */
+/* 
 .portfolio-item.filtered a {
     cursor: default;
-}
+} */
 
-.portfolio-item.filtered .enlarge,
+/* .portfolio-item.filtered .enlarge,
 .portfolio-item.filtered .link,
 .portfolio-item.filtered .overlay-mask,
 .portfolio-item.filtered .project-title {
     display: none;
-}
+} */
 
 .portfolio-thumb {
     display   : block;
     position  : relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
     overflow  : hidden;
+
 }
 
 .scrollimation .portfolio-thumb {
@@ -115,7 +117,7 @@ body {
     left              : 0;
     width             : 100%;
     height            : 100%;
-    background        : #E62B4A;
+    background        : linear-gradient(200deg, rgba(245, 127, 45, 1) 14%, rgba(255, 192, 0, 1) 58%);
     opacity           : 0;
     filter            : alpha(opacity=0);
     z-index           : 1;
@@ -210,7 +212,7 @@ body {
     font-weight       : 500;
     margin            : 0;
     padding           : 20px 0;
-    font-size         : 21px;
+    font-size         : 30px;
     color             : white;
     text-align        : center;
     z-index           : 2;
@@ -226,4 +228,10 @@ body {
 
 .portfolio-thumb .project-title:hover {
     color: black;
+}
+
+.img-responsive {
+    background-position: center;
+    width              : 100%;
+
 }
